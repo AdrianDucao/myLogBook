@@ -1,45 +1,12 @@
-class Button extends React.Component {
-  render() {
-    return (
-      <TouchableOpacity
-        style={{
-          backgroundColor: "blue",
-          padding: 20,
-          borderRadius: 50
-        }}
-      >
-       <Text
-         style={{
-           color: "white",
-           fontSize: 20
-         }}
-       >
-         </Text>
-       </TouchableOpacity>
-    );
-  }
- }
+import React from 'react';
+import { Text, View } from 'react-native';
 
- const styles = StyleSheet.create({
-  box: {
-  backgroundColor: “blue”,
-  padding: 20,
-  borderRadius: 50
-  },
-  text: {
-  color: “white”,
-  fontSize: 20
-  }
- });
- class Button extends React.Component {
-  render() {
+export default function YourApp() {
   return (
-  <TouchableOpacity style={styles.box}>
-  <Text style={styles.text}>
-  {this.props.title}
-  </Text>
-  </TouchableOpacity>
+    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+      <Text>
+        Try editing me! 🎉
+      </Text>
+    </View>
   );
-  }
- }
-export default App;
+}
