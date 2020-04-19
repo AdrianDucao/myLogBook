@@ -1,10 +1,10 @@
 import React from 'react';
 import {View, Text, StyleSheet, Image, Component} from 'react-native';
 
-const Header = () =>{
+const Screen = () =>{
   return (
     <View style={styles.header}>
-      <Text style={styles.headerText}>myLogBook</Text>
+        
     </View>
   )
 }
@@ -21,4 +21,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default Header;
+export default Screen;

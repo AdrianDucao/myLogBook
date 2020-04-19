@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {View, Text, StyleSheet, Image} from 'react-native';
 import Header from './components/Header';
 
