@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, StyleSheet, Image, Component, Button} from 'react-native';
+import {View, Text, StyleSheet, Component, Button, TouchableOpacity} from 'react-native';
     
 const AddButton = (props) =>{
   return (

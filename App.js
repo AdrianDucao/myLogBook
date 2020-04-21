@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {View, Text, StyleSheet, Image, Button} from 'react-native';
+import {View, Text, StyleSheet, Button} from 'react-native';
 
 import Header from './components/Header';
 import AddButton from './components/AddButton';
