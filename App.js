@@ -7,10 +7,10 @@ import AddButton from './components/AddButton';
 const App = () =>{
   return (
     <View style={styles.container}>
-      <Header />
+      <Header title="myLogBook" />
       <AddButton />
     </View>
-  )
+  );
 }
 
 const styles = StyleSheet.create({

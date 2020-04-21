@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, StyleSheet, Image, Component, Button} from 'react-native';
-
-const AddButton = () =>{
+    
+const AddButton = (props) =>{
   return (
     <View style={styles.content}>
       <Button style={styles.button}
@@ -17,6 +17,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'flex-end',
     marginBottom: 5,
+    margin: 20,
   },
 
   button:{
