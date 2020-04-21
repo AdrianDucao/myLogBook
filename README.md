@@ -3,7 +3,9 @@ myLogBook is a simple Log Book mobile app for logging things like, food inventor
 
 ### Todo Checklist
 - [x] learn reactnative syntax
-- [x] running simple build test 
+- [x] running simple build test
+- [ ] Design basic UI
+- [ ] SQLite for database
 - [ ] create book - for different task
 - [ ] create page - for writing different logs
 - [ ] delete book - removing whole book
