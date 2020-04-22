@@ -2,15 +2,35 @@ import React, { Component } from 'react';
 import {View, Text, StyleSheet, Button} from 'react-native';
 
 import Header from './components/Header';
-import AddButton from './components/AddButton';
+import Input from './components/Input';
 
-const App = () =>{
-  return (
-    <View style={styles.container}>
-      <Header title="myLogBook" />
-      <AddButton />
-    </View>
-  );
+export default class App extends React.Component{
+  constructor(props){
+    super(props);
+    
+    this.state = {
+      todoInput: '',
+      todos:[
+        {id: 0, title: 'sample1', done: false},
+      ]
+    }
+  }
+
+  addNewLog(){
+    console.log(this.state.todoInput);
+  }
+
+  render() {
+    return (
+      <View style={styles.container}>
+        <Header title="myLogBook" />
+        <Input
+          textChange={todoInput => todoInput}
+          addNewLog={() => this.addNewLog}
+        />
+      </View>
+    );
+  }
 }
 
 const styles = StyleSheet.create({
@@ -18,5 +38,3 @@ const styles = StyleSheet.create({
     flex: 1,
   }
 });
-
-export default App;

@@ -5,7 +5,7 @@ const AddButton = (props) =>{
   return (
     <View style={styles.content}>
       <Button style={styles.button}
-        title="Add Book"
+        title="Add Log"
       />
     </View>
   )
@@ -13,11 +13,10 @@ const AddButton = (props) =>{
 
 const styles = StyleSheet.create({
   content:{
-    padding: 10,
     flex: 1,
     justifyContent: 'flex-end',
     marginBottom: 5,
-    margin: 20,
+    margin: 10,
   },
 
   button:{
