@@ -1,23 +1,37 @@
 import React, { Component } from 'react';
-import {View, Text, StyleSheet, Button} from 'react-native';
+import {View, Text, StyleSheet, Button, FlatList} from 'react-native';
 
 import Header from './components/Header';
 import Input from './components/Input';
+import TodoItem from './components/TodoItem';
 
 export default class App extends React.Component{
-  constructor(props){
-    super(props);
+  constructor(){
+    super();
     
     this.state = {
       todoInput: '',
       todos:[
         {id: 0, title: 'sample1', done: false},
+        {id: 1, title: 'sample2', done: false},
+        {id: 2, title: 'sample3', done: false},
       ]
     }
   }
 
   addNewLog(){
-    console.log(this.state.todoInput);
+    let todos = this.state.todos;
+
+    todos.unshift({
+      id: todos.length + 1,
+      todos: this.state.todoInput,
+      done:false
+    });
+
+  this.setState({
+    todos,
+    todoInput: ''
+  });
   }
 
   render() {
@@ -25,8 +39,19 @@ export default class App extends React.Component{
       <View style={styles.container}>
         <Header title="myLogBook" />
         <Input
-          textChange={todoInput => todoInput}
-          addNewLog={() => this.addNewLog}
+          textChange={todoInput => this.setState({todoInput})}
+          addNewLog={() => this.addNewLog()}
+        />
+        <FlatList 
+          data={this.state.todos}
+          keyExtractor={(item, index) => index.toString()}
+          renderItem={(item, index) => {
+            return(
+              <TodoItem 
+                todoItem={item}
+              />
+            )
+          }}
         />
       </View>
     );
