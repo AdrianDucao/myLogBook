@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/ian/Projects/myLogBook/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hu/values-hu.xml",
+            "outputFile": "/home/ian/Projects/reactnative/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hu/values-hu.xml",
             "map": [
                 {
                     "source": "/home/ian/.gradle/caches/transforms-2/files-2.1/4f509a65121478d6153615d7ef5b7c5f/core-1.1.0/res/values-hu/values-hu.xml",

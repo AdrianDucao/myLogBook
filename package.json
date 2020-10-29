@@ -10,6 +10,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "dotenv": "^8.2.0",
     "popup-ui": "^1.0.10",
     "react": "16.11.0",
     "react-native": "0.62.2",
@@ -23,6 +24,7 @@
     "babel-jest": "24.9.0",
     "eslint": "6.8.0",
     "jest": "24.9.0",
+    "jetifier": "^1.6.6",
     "metro-react-native-babel-preset": "0.58.0",
     "react-test-renderer": "16.11.0"
   },
